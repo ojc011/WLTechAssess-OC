@@ -11,13 +11,16 @@ class ContactsController < ApplicationController
     @email = Email.new(contact: @contact)
   end
 
+
   def new
     @contact = Contact.new
   end
 
+
   def edit
     @contact = Contact.find(params[:id])
   end
+
 
   def create
     @contact = Contact.new(contact_params)
@@ -29,6 +32,7 @@ class ContactsController < ApplicationController
     end
   end
 
+  
   def update
     @contact = Contact.find(params[:id])
 

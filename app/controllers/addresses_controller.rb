@@ -1,10 +1,9 @@
 class AddressesController < ApplicationController
-  def index
-    @addresses = Address.all
-  end
   
-  def show
-    @address = Address.find(params[:id])
+  def index
+    @contact = Contact.find(params[:contact_id])
+    @addresses = Address.all
+    @address = Address.new
   end
 
   def new
@@ -17,10 +16,11 @@ class AddressesController < ApplicationController
     @address = @contact.addresses.find(params[:id])
   end
 
+
   def create
     @contact = Contact.find(params[:contact_id])
     @address = @contact.addresses.create(address_params)
-    redirect_to contact_path(@contact)
+    redirect_to contact_addresses_path(@contact)
   end
 
   def update
@@ -28,17 +28,18 @@ class AddressesController < ApplicationController
     @address = @contact.addresses.find(params[:id])
 
     if @address.update(address_params)
-      redirect_to @contact, notice: "Saved!"
+      redirect_to contact_addresses_path(@contact), notice: "Saved!"
     else
       render 'edit'
     end
   end
 
+  
   def destroy
     @contact = Contact.find(params[:contact_id])
     @address = @contact.addresses.find(params[:id])
     @address.destroy
-    redirect_to contact_path(@contact)
+    redirect_to contact_addresses_path(@contact)
   end
 
   private
