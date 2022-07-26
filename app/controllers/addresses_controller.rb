@@ -1,9 +1,17 @@
 class AddressesController < ApplicationController
-
+  def index
+    @addresses = Address.all
+  end
+  
   def show
     @address = Address.find(params[:id])
   end
 
+  def new
+    @contact = Contact.find(params[:contact_id])
+    @address = Address.new
+  end
+  
   def edit
     @contact = Contact.find(params[:contact_id])
     @address = @contact.addresses.find(params[:id])
@@ -17,10 +25,10 @@ class AddressesController < ApplicationController
 
   def update
     @contact = Contact.find(params[:contact_id])
-    @address = @contact.addresses.create(address_params)
+    @address = @contact.addresses.find(params[:id])
 
     if @address.update(address_params)
-      redirect_to @address, notice: "Saved!"
+      redirect_to @contact, notice: "Saved!"
     else
       render 'edit'
     end
