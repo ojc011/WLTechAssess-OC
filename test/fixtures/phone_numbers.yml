@@ -1,9 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  phone_number: MyString
+  kind: home
+  number: 845-825-3333
+  comment: comment for phone number one
   contact: one
 
 two:
-  phone_number: MyString
+  kind: cell
+  number: 512-423-2344
+  comment: comment for phone number two
   contact: two
