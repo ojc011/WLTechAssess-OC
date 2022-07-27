@@ -6,25 +6,21 @@ class PhoneNumbersController < ApplicationController
     @phone_number = PhoneNumber.new
   end
   
-
   def new
     @contact = Contact.find(params[:contact_id])
     @phone_number = PhoneNumber.new
   end
   
-
   def edit
     @contact = Contact.find(params[:contact_id])
     @phone_number = @contact.phone_numbers.find(params[:id])
   end
-
 
   def create
     @contact = Contact.find(params[:contact_id])
     @phone_number = @contact.phone_numbers.create(phone_number_params)
     redirect_to contact_phone_numbers_path(@contact)
   end
-
 
   def update
     @contact = Contact.find(params[:contact_id])
