@@ -10,10 +10,28 @@
  *
  *= require_self
  *= require_tree .
- */
+*/
 
 @import 'bootstrap/scss/bootstrap';
 @import 'main';
+
+:root {
+  --main-dark-blue: #3c421a;
+  --main-blue: #3c421a;
+  --main-light-blue: rgb(75, 83, 32);
+  --main-white: rgb(241, 241, 241);
+  --main-grey: rgb(241, 241, 241);
+  --main-black: rgb(28, 28, 28);
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#title {
+  text-decoration: none;
+  color: var(--main-white);
+}
 
 .title-container {
   display: flex;
@@ -23,37 +41,111 @@
 
   h1 {
     margin: 0;
+    color: var(--main-black);
   }
 }
 
-.link-to-new {
-  padding: 20px;
+h1 {
+  font-size: 40px;
+  color: var(--main-black);
 }
 
-.row {
-  background-color: rgb(75, 83, 32);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px 50px;
-  width: 100%;
+h4 {
+  font-size: 30px;
 }
 
-td {
-  color: white;
+p {
+  font-size: 25px;
   padding: 10px;
 }
 
-.emails,
-.phone-numbers,
-.addresses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.contact {
+  background-color: var(--main-light-blue);
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 25px;
 }
 
-.email,
-.phone-number,
-.address {
-  width: 30%;
-  min-width: 300px;
+.contact-name {
+  background-color: var(--main-blue);
+  border-radius: 15px;
+  margin-top: 70px;
+  padding: 20px;
+  color: white;
+}
+
+.contact-details {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.emails,
+.addresses {
+  background-color: var(--main-light-blue);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+
+.phone-numbers {
+  background-color: var(--main-grey);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.link-to-new {
+  padding: 10px;
+  margin: 10px;
+}
+
+.row {
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+td {
+  color: var(--main-white);
+  padding: 10px;
+}
+
+.footer-links {
+  font-size: 25px;
+  margin: 10px;
+  width: 100%;
+}
+
+.submit,
+.form-control {
+  font-size: 25px;
+}
+
+.btn {
+  font-size: 20px;
+  border: white;
+  background-color: #3c421a;
+}
+
+.contact-btn {
+  color: var(--main-white);
+  border: #3c421a;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 12px;
+  }
 }
