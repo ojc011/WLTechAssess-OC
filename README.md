@@ -1,6 +1,6 @@
 
 
-# [Address Book using Ruby on Rails!](https://still-wildwood-14883.herokuapp.com/contacts?id=title)
+# [Address Book using Ruby on Rails!](https://still-wildwood-14883.herokuapp.com/)
 
 ## Install
 
@@ -47,6 +47,6 @@ rails server
 ```shell
 git push heroku main
 ```
-[Visit my site here!](https://still-wildwood-14883.herokuapp.com/contacts)
+[Visit my site here!](https://still-wildwood-14883.herokuapp.com/)
 
 ![App Homepage](https://github.com/ojc011/WLTechAssess-OC/blob/main/app/assets/images/AddressBook.gif?raw=true)
