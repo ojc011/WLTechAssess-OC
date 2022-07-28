@@ -13,7 +13,13 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0",
-    "node-sass": "^7.0.1"
-  }
+    "webpack-dev-server": "^3.11.0"
+  },
+  "engines": {
+    "npm": "8.x",
+    "yarn": "1.x"
+  },
+  "scripts": {
+  "start": ""
+}
 }
