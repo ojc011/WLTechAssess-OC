@@ -1,28 +1,34 @@
-<p>
-  <h1>Contact:</h1>
-  <p>
+<header class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-header">
+      <%= link_to 'All Contacts', contacts_path, class:"navbar-brand" %>
+    </div>
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item"><%=link_to 'Addresses', contact_addresses_path(@contact), class:"nav-link" %> </li>
+      <li class="nav-item"><%=link_to 'Phone Numbers', contact_phone_numbers_path(@contact), class:"nav-link" %> </li>
+      <li class="nav-item"><%=link_to 'Emails', contact_emails_path(@contact), class:"nav-link" %> </li>
+    </ul>
+  </nav>
+</header>
+
+<%# Full Name %>
+<h1>
   <%= @contact.salutation %>
   <%= @contact.first_name %>
   <%= @contact.middle_name %>
   <%= @contact.last_name %>
-  </p>
-  <p>
+</h1>
+
+<p>
   <strong>SSN:</strong>
   <%= @contact.ssn %><br>
   <strong>Date of Birth:</strong>
   <%= @contact.dob %><br>
   <strong>Comment:</strong>
   <%= @contact.comment %>
-  </p>
 </p>
 
-<%=link_to 'Addresses', contact_addresses_path(@contact) %>
-<br>
-<%=link_to 'Phone Numbers', contact_phone_numbers_path(@contact) %>
-<br>
-<%=link_to 'Emails', contact_emails_path(@contact) %>
-
-<hr>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<%= link_to 'Edit Contact', edit_contact_path(@contact) %> |
+<%= link_to 'Delete Contact', contact_path(@contact),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %>

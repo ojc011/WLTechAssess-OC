@@ -26,15 +26,34 @@
   }
 }
 
-.contacts {
+.link-to-new {
+  padding: 20px;
+}
+
+.row {
+  background-color: rgb(75, 83, 32);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px 50px;
+  width: 100%;
+}
+
+td {
+  color: white;
+  padding: 10px;
+}
+
+.emails,
+.phone-numbers,
+.addresses {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 1px black;
 }
 
-.contact {
+.email,
+.phone-number,
+.address {
   width: 30%;
   min-width: 300px;
-  border: 1px black;
 }
