@@ -1,5 +1,6 @@
 <div class="title-container">
   <h1>Contacts</h1>
+  <%= link_to 'Logout', '/logout', :data => { :confirm => 'Are you sure?' }, class: "contact-btn btn btn-outline-primary" %>
 </div>
 <div class='link-to-new'>
   <%= link_to 'New Contact', new_contact_path, class: "btn btn-primary" %>
