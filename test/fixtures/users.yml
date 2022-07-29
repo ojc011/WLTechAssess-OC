@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  email: MyString
-  first_name: MyString
-  last_name: MyString
-  user_name: MyString
-  password_digest: MyString
+  email: example@example.com
+  first_name: George
+  last_name: Jones
+  user_name: GJ123
+  password_digest: testpass123
 
 two:
-  email: MyString
-  first_name: MyString
-  last_name: MyString
-  user_name: MyString
-  password_digest: MyString
+  email: test@test.com
+  first_name: Kaitlyn
+  last_name: Esposito
+  user_name: KE321
+  password_digest: testpass321
