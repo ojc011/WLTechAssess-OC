@@ -5,8 +5,8 @@
 <% if current_user %>
     <%= link_to 'Logout', '/logout', :data => { :confirm => 'Are you sure?' }%>
 <% else %>
-    <%= link_to 'Signup', '/signup', class: "contact-btn btn btn-outline-primary" %>
+    <%= link_to 'Signup', '/signup', class: "contact-btn btn btn-outline-secondary" %>
     <br>
-    <%= link_to 'Login', '/login', class: "contact-btn btn btn-outline-primary" %>
+    <%= link_to 'Login', '/login', class: "contact-btn btn btn-outline-secondary" %>
 <% end %>
 </div>
