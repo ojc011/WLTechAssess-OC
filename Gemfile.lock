@@ -84,6 +84,7 @@ GEM
       sort_alphabetical (~> 1.0)
     crass (1.0.6)
     erubi (1.10.0)
+    execjs (2.8.1)
     ffi (1.15.5-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -197,6 +198,8 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2022.1)
       tzinfo (>= 1.0.0)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     unicode_utils (1.4.0)
     wdm (0.1.1)
     web-console (4.2.0)
@@ -241,6 +244,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
   tzinfo-data
+  uglifier
   wdm (>= 0.1.0)
   web-console (>= 3.3.0)
   webdrivers
