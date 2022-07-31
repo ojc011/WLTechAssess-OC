@@ -58,4 +58,3 @@ gem 'country_select', '~> 4.0'
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
-gem 'rails_12factor', group: :production

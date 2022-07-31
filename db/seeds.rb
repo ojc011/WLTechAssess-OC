@@ -73,23 +73,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example1@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email1@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '503-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '406-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -112,23 +112,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example2@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email2@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '507-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '427-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -157,23 +157,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example3@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email3@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '549-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '461-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -194,23 +194,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example4@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email4@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '593-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '411-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -238,23 +238,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example5@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email5@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '599-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '499-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -285,23 +285,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example6@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email6@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '588-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '488-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -330,23 +330,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example7@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email7@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '577-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '477-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -369,23 +369,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example8@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email8@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '566-492-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '466-233-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -408,23 +408,23 @@ Contact.create([
     ],
     emails_attributes: [
       {
-        email_address: 'example@test.com',
+        email_address: 'example9@test.com',
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email9@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '502-466-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '405-266-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
@@ -457,19 +457,19 @@ Contact.create([
         comment: 'I\'m an example comment on an email'
       },
       {
-        email_address: 'fake_email@example.net',
+        email_address: 'fake_email11@example.net',
         comment: 'Here comes another example comment!'
       }
     ],
     phone_numbers_attributes: [
       {
         kind: 'Home',
-        number: '502-492-1234',
+        number: '502-455-1234',
         comment: 'I\'m just commenting on a phone number'
       },
       {
         kind: 'Office',
-        number: '405-233-9234',
+        number: '405-255-9234',
         comment: 'Don\'t call here after 5pm.'
       }
     ]
