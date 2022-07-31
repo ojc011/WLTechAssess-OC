@@ -4,6 +4,8 @@
 <br>
 <% if current_user %>
     <%= link_to 'Logout', '/logout', :data => { :confirm => 'Are you sure?' }%>
+    <br>
+    <%= link_to 'My Contacts', contacts_path %>
 <% else %>
     <%= link_to 'Signup', '/signup', class: "contact-btn btn btn-outline-secondary" %>
     <br>
