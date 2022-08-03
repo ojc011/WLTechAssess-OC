@@ -19,12 +19,18 @@ class PhoneNumbersController < ApplicationController
   def create
     @contact = Contact.find(params[:contact_id])
     @phone_number = @contact.phone_numbers.create(phone_number_params)
+
+    respond_to do |format|
       if @phone_number.save
-        redirect_to contact_path(@contact)
+        #format.js
+        format.html { redirect_to contact_path(@contact) }
+        format.json { render :show, status: :created, location: @contact }
       else
-        render 'new'
+        format.html { render 'new' }
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
   end
+end
 
   def update
     @contact = Contact.find(params[:contact_id])

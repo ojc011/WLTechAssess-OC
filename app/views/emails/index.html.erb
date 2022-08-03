@@ -9,7 +9,8 @@
     <div class="email">
       <p><%= email.email_address %></p>
       <p><%= email.comment %></p>
-      <p><%= link_to 'Edit', edit_contact_email_path(email.contact, email) %> | <%= link_to 'Delete', [email.contact, email],
+      <p><%= link_to 'Edit', edit_contact_email_path(email.contact, email) %> | 
+      <%= link_to 'Delete', [email.contact, email],
               method: :delete,
               data: { confirm: 'Are you sure?' } %></p>
     </div>

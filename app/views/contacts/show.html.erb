@@ -24,7 +24,7 @@
   <br>
   <div class="container addresses">
     <h4>Addresses:</h4>
-    <p><%= link_to 'New Address', new_contact_address_path(@contact), class:"btn btn-primary" %></p>
+    <p id="new-address"><%= link_to 'New Address', new_contact_address_path(@contact), remote: true, class:"btn btn-primary" %></p>
     <% if @contact.addresses.any? %>
       <div class="row">
         <% @contact.addresses.each do |address| %>
@@ -43,7 +43,7 @@
   <br>
   <div class="container phone-numbers">
     <h4>Phone Numbers:</h4>
-    <p><%= link_to 'New Phone Number', new_contact_phone_number_path(@contact), class:"btn btn-primary" %></p>
+    <p id="new-phonenumber"><%= link_to 'New Phone Number', new_contact_phone_number_path(@contact), remote: true, class:"btn btn-primary" %></p>
     <% if @contact.phone_numbers.any? %>
       <div class="row">
         <% @contact.phone_numbers.each do |phone_number| %>
