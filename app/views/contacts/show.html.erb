@@ -31,10 +31,10 @@
           <div class="col-12" id="addresses">
             <p class><%= address.street %> <%= address.town %></p>
             <p class><%= address.state %> <%= address.zip %> <%= address.country %></p>
-            <p class><%= link_to 'Edit', edit_contact_address_path(address.contact, address) %> |
+            <p class id="edit-address"><%= link_to 'Edit', edit_contact_address_path(address.contact, address), remote: true, class: "btn btn-primary" %> |
                 <%= link_to 'Delete', [address.contact, address],
                       method: :delete,
-                      data: { confirm: 'Are you sure?', remote: true }, class: "delete" %></p>
+                      data: { confirm: 'Are you sure?', remote: true }, class: "delete btn btn-primary" %></p>
           </div>
         <% end %>
       </div>
