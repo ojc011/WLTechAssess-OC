@@ -1,9 +1,9 @@
 <div class="title-container">
   <h1>Contacts</h1>
-  <%= link_to 'Logout', '/logout', :data => { :confirm => 'Are you sure?' }, class: "contact-btn btn btn-outline-primary" %>
+  <%= link_to 'Logout', '/logout', :data => { :confirm => 'Are you sure?' }, class: "btn btn-outline-danger" %>
 </div>
 <div class='link-to-new'>
-  <%= link_to 'New Contact', new_contact_path, class: "btn btn-primary" %>
+  <p id="new-contact"><%= link_to 'New Contact', new_contact_path, remote: true, class: "btn btn-primary" %></p>
 </div>
 <div class="container" id="contacts">
   <table>
@@ -18,12 +18,12 @@
           <td><%= contact.last_name %></td>
         </div>
         <div class="col-3">
-          <td class="contact-link">
+          <td class="contact-link" id="edit-contact">
             <%= link_to 'View', contact_path(contact), class: "contact-btn btn btn-outline-primary" %> |
-            <%= link_to 'Edit', edit_contact_path(contact), class: "contact-btn btn btn-outline-primary" %> |
+            <%= link_to 'Edit', edit_contact_path(contact), remote: true, class: "btn btn-outline-warning" %> |
             <%= link_to 'Delete', contact_path(contact),
                   method: :delete,
-                  data: { confirm: 'Are you sure?', remote: true }, class: "delete contact-btn btn btn-outline-primary" %>
+                  data: { confirm: 'Are you sure?', remote: true }, class: "btn btn-outline-danger" %>
           </td>
         </div>
       </tr>

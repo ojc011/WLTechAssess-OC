@@ -19,12 +19,18 @@ class AddressesController < ApplicationController
   def create
     @contact = Contact.find(params[:contact_id])
     @address = @contact.addresses.create(address_params)
+
+    respond_to do |format|
       if @address.save
-        redirect_to contact_path(@contact)
+        #format.js
+        format.html { redirect_to contact_path(@contact) }
+        format.json { render :show, status: :created, location: @contact }
       else
-        render 'new'
+        format.html { render 'new' }
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
   end
+end
 
   def update
     @contact = Contact.find(params[:contact_id])

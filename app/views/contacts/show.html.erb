@@ -5,6 +5,14 @@
     <%= @contact.middle_name %>
     <%= @contact.last_name %>
   </h1>
+  </div>
+  <div class="footer-links col-sm-12 col-m-3" id="edit-contact">
+    <%= link_to 'All Contacts', contacts_path, class: "btn btn-primary" %> |
+    <%= link_to 'Edit Contact', edit_contact_path(@contact), remote: true, class: "btn btn-outline-warning" %> |
+    <%= link_to 'Delete Contact', contact_path(@contact), class: "btn btn-outline-danger",
+        method: :delete,
+        data: { confirm: 'Are you sure?', } %>
+  </div>
   <div class="container contact-details">
     <p class="row">
       <div class="col-xs-12 col-lg-6">
@@ -31,10 +39,10 @@
           <div class="col-12" id="addresses">
             <p class><%= address.street %> <%= address.town %></p>
             <p class><%= address.state %> <%= address.zip %> <%= address.country %></p>
-            <p class id="edit-address"><%= link_to 'Edit', edit_contact_address_path(address.contact, address), remote: true, class: "btn btn-primary" %> |
+            <p class id="edit-address"><%= link_to 'Edit', edit_contact_address_path(address.contact, address), remote: true, class: "btn btn-outline-warning" %> |
                 <%= link_to 'Delete', [address.contact, address],
                       method: :delete,
-                      data: { confirm: 'Are you sure?', remote: true }, class: "delete btn btn-primary" %></p>
+                      data: { confirm: 'Are you sure?', remote: true }, class: "btn btn-outline-danger" %></p>
           </div>
         <% end %>
       </div>
@@ -50,10 +58,10 @@
           <div class="col-12" id="phone-numbers">
             <p><%= phone_number.number %></p>
             <p><%= phone_number.comment %></p>
-            <p id="edit-phonenumber"><%= link_to 'Edit', edit_contact_phone_number_path(phone_number.contact, phone_number), remote: true, class: "btn btn-primary" %> | 
+            <p id="edit-phonenumber"><%= link_to 'Edit', edit_contact_phone_number_path(phone_number.contact, phone_number), remote: true, class: "btn btn-outline-warning" %> | 
                 <%= link_to 'Delete', [phone_number.contact, phone_number],
                     method: :delete,
-                    data: { confirm: 'Are you sure?', remote: true }, class: "delete btn btn-primary" %></p>
+                    data: { confirm: 'Are you sure?', remote: true }, class: "btn btn-outline-danger" %></p>
           </div>
         <% end %>
       </div>
@@ -69,20 +77,12 @@
           <div class="col-sm-12 col-m-3" id="emails">
             <p><%= email.email_address %></p>
             <p><%= email.comment %></p>
-            <p id="edit-email"><%= link_to 'Edit', edit_contact_email_path(email.contact, email), remote: true, class: "btn btn-primary" %> | 
+            <p id="edit-email"><%= link_to 'Edit', edit_contact_email_path(email.contact, email), remote: true, class: "btn btn-outline-warning" %> | 
                   <%= link_to 'Delete', [email.contact, email],
                     method: :delete,
-                    data: { confirm: 'Are you sure?', remote: true }, class: "delete btn btn-primary" %></p>
+                    data: { confirm: 'Are you sure?', remote: true }, class: "btn btn-outline-danger" %></p>
           </div>
         <% end %>
       </div>
     <% end %>
-  </div>
-  <div class="footer-links col-sm-12 col-m-3">
-    <%= link_to 'All Contacts', contacts_path %> |
-    <%= link_to 'Edit Contact', edit_contact_path(@contact) %> |
-    <%= link_to 'Delete Contact', contact_path(@contact),
-        method: :delete,
-        data: { confirm: 'Are you sure?' } %>
-  </div>
 </div>
