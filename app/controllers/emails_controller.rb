@@ -47,11 +47,7 @@ class EmailsController < ApplicationController
     @contact = Contact.find(params[:contact_id])
     @email = @contact.emails.find(params[:id])
     @email.destroy
-    respond_to do |format|
-      format.js
-      format.html { redirect_to contact_path(@contact), notice: 'Email was successfully deleted' }
-      format.json { head :no_content }
-    end
+    redirect_to contact_path(@contact)
   end
 
   private
