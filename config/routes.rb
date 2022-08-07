@@ -1,22 +1,24 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
-  
-  get '/signup' => 'user#new'
-  post '/users' => 'user#create'
-
-  get '/login' => 'sessions#new'
-  post '/login' => 'sessions#create'
-  get '/logout' => 'sessions#destroy'
-
+  root "contacts#index"
+  post "sign_up", to: "users#create"
+  get "sign_up", to: "users#new"
+  put "account", to: "users#update"
+  get "account", to: "users#edit"
+  delete "account", to: "users#destroy"
+  resources :confirmations, only: [:create, :edit, :new], param: :confirmation_token
+  post "login", to: "sessions#create"
+  delete "logout", to: "sessions#destroy"
+  get "login", to: "sessions#new"
+  resources :passwords, only: [:create, :edit, :new, :update], param: :password_reset_token
+  resources :active_sessions, only: [:destroy] do
+    collection do
+      delete "destroy_all"
   get 'contacts/index'
   resources :contacts do
     resources :addresses, :phone_numbers, :emails
   end
-  
-  root to: 'user#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    end
+  end
 end
 
 =begin
