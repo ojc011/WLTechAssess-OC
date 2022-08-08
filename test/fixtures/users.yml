@@ -5,11 +5,11 @@ one:
   first_name: George
   last_name: Jones
   user_name: GJ123
-  password_digest: testpass123
+  password: testpass123
 
 two:
   email: test@test.com
   first_name: Kaitlyn
   last_name: Esposito
   user_name: KE321
-  password_digest: testpass321
+  password: testpass321
