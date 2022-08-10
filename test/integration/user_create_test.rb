@@ -1,6 +1,6 @@
 require "test_helper"
 
-class UserControllerTest < ActionDispatch::IntegrationTest
+class UserCreateTest < ActionDispatch::IntegrationTest
     test "can create a contact" do
         get "/contacts/new"
         assert_response :success

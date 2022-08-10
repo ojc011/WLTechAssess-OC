@@ -1,6 +1,6 @@
 require "test_helper"
 
-class UserFlowsTest < ActionDispatch::IntegrationTest
+class UserLoginTest < ActionDispatch::IntegrationTest
   test "login and browse site" do
     # login via https
     https!
@@ -13,8 +13,8 @@ class UserFlowsTest < ActionDispatch::IntegrationTest
     assert_equal 'Login successful', flash[:notice]
 
     https!(false)
-    get "/contacts/1"
+    get "/contacts/"
     assert_response :success
-    assert_select 'a', 'All Contacts'
+    assert_select 'h1', 'Contacts'
   end
 end

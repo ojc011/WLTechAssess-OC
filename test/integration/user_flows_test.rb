@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserControllerTest < ActionDispatch::IntegrationTest
+class UserFlowsTest < ActionDispatch::IntegrationTest
   setup do
     @first_name = contacts(:one)
     @salutation = contacts(:two)

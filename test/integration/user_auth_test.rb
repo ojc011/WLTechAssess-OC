@@ -1,6 +1,6 @@
 require "test_helper"
 
-class UsersControllerTest < ActionDispatch::IntegrationTest
+class UsersAuthTest < ActionDispatch::IntegrationTest
     setup do
         @contact = contacts(:one)
   test "user login" do
